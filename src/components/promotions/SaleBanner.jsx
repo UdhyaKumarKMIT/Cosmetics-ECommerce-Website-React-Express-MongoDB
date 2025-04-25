@@ -3,7 +3,7 @@ import "./SaleBanner.css"
 const SaleBanner = () => {
   return (
     <section className="sale-banner">
-      <div className="sale-content">
+         <div className="sale-content">
         <h2 className="sale-title">Spring Beauty Sale</h2>
         <h3 className="sale-subtitle">Up to 40% Off</h3>
         <p className="sale-description">
@@ -26,6 +26,7 @@ const SaleBanner = () => {
         <div className="sale-product product-3"></div>
       </div>
     </section>
+   
   )
 }
 

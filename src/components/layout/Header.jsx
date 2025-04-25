@@ -4,13 +4,7 @@ import {Link} from 'react-router-dom'
 const Header = () => {
   return (
     <header className="header">
-      <div className="announcement-bar">
-        <p>SPEND $100+ AND RECEIVE FREE SHIPPING</p>
-        <div className="announcement-links">
-          <a href="/help">CUSTOMER HELP</a>
-          <a href="/locations">LOCATION FINDER</a>
-        </div>
-      </div>
+     
 
       <div className="main-header">
         <div className="logo">
@@ -47,10 +41,7 @@ const Header = () => {
         </nav>
         
         <div className="header-actions">
-          <button className="icon-button">
-            <Search size={20} />
-          </button>
-         
+          
           <button className="icon-button">
             <User size={20} />
           </button>

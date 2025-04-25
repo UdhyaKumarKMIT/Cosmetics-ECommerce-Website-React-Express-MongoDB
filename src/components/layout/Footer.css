@@ -1,67 +1,57 @@
 .footer {
-  background-color: #f8e8e7;
-  padding: 60px 40px 20px;
+  background-color: pink;
+  padding: 60px 40px;
 }
 
 .footer-content {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.footer-features {
-  display: flex;
-  gap: 40px;
+.col-md-6 {
+  flex: 1;
+  min-width: 250px;
 }
 
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.navlinksBox h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.navlinksBox ul {
+  list-style: none;
+  padding: 0;
 }
 
-.feature-icon.pink {
-  background-color: #e5b3b0;
+.navlinksBox li {
+  margin-bottom: 8px;
 }
 
-.feature-icon.black {
-  background-color: #333;
-}
-
-.feature-icon.blue {
-  background-color: #6ab7ff;
-}
-
-.feature-text h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0 0 5px 0;
+.navlinksBox a {
+  text-decoration: none;
   color: #333;
+  transition: color 0.3s;
 }
 
-.feature-text p {
-  font-size: 12px;
-  margin: 0;
-  color: #777;
+.navlinksBox a:hover {
+  color: #000;
 }
 
+/* Social media links */
 .social-links {
   display: flex;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .social-link {
@@ -77,28 +67,12 @@
 }
 
 .social-link:hover {
-  background-color: #e5b3b0;
+  background-color: #555;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 30px;
   font-size: 14px;
-  color: #777;
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 40px 20px 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .footer-features {
-    flex-direction: column;
-    gap: 20px;
-  }
+  color: #555;
 }
