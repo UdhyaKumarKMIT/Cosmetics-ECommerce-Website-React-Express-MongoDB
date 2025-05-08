@@ -9,15 +9,15 @@ const Header = () => {
       <div className="main-header">
         <div className="logo">
           <h1>
-          MIT BEAUTY<span>•</span>
+           BEAUTY<span>•</span>
           </h1>
-          <p className="tagline"> MIT COSMETICS</p>
+          <p className="tagline">COSMETICS</p>
         </div>
 
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP ALL</a>
+              <a href="/shop">SHOP ALL Products</a>
             </li>
             <li>
               <a href="/bestsellers">BEST SELLERS</a>
