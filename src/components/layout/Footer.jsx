@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="row d-flex justify-content-between me-auto">
           <div className="col-md-6 col-sm-12 navLinks">
             <div className="navlinksBox">
-              <h3> MIT SHOP</h3>
+              <h3>SHOP</h3>
               <ul>
-                <li><a href="#">Shop All Products</a></li>
-                <li><a href="#">Best Sellers </a></li>
-                <li><a href="#">Skincare </a></li>
-                <li><a href="#">Makeup </a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Best Sellers Products</a></li>
+                <li><a href="#">Skincare Products</a></li>
+                <li><a href="#">Makeup Products </a></li>
               </ul>
             </div>
           </div>
