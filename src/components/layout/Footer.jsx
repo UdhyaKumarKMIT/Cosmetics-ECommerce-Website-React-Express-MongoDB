@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="row d-flex justify-content-between me-auto">
           <div className="col-md-6 col-sm-12 navLinks">
             <div className="navlinksBox">
-              <h3>SHOP Products</h3>
+              <h3>SHOP</h3>
               <ul>
-                <li><a href="#">Shop Products </a></li>
-                <li><a href="#">Best Products</a></li>
+                <li><a href="#">Shop  </a></li>
+                <li><a href="#">Best </a></li>
                 <li><a href="#">Skincare </a></li>
                 <li><a href="#">Makeup </a></li>
               </ul>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p className="text-center">© 2025 UdhyaKumarKMIT. All rights reserved.</p>
+        <p className="text-center">© 2025 UdhyaKumarKMIT Final Year Student. All rights reserved.</p>
       </div>
     </footer>
   );
