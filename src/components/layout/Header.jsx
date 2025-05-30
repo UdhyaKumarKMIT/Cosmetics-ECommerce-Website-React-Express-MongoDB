@@ -23,10 +23,10 @@ const Header = () => {
               <a href="/bestsellers">BEST </a>
             </li>
             <li>
-              <a href="/skincare">SKINCARE Products</a>
+              <a href="/skincare">SKINCARE </a>
             </li>
             <li>
-              <a href="/makeup">MAKEUP Products</a>
+              <a href="/makeup">MAKEUP </a>
             </li>
            
             <li>
