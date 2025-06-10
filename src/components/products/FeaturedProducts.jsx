@@ -11,13 +11,13 @@ const FeaturedProducts = () => {
     },
     {
       id: 2,
-      name: "FOUNDATION Cream",
+      name: "FOUNDATION ",
       image: "/placeholder.svg?height=200&width=200",
       category: "Makeup",
     },
     {
       id: 3,
-      name: "MOISTURIZER Lotion",
+      name: "MOISTURIZER",
       image: "/placeholder.svg?height=200&width=200",
       category: "Skincare",
     },
