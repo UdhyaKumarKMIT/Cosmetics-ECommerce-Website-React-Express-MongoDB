@@ -11,19 +11,19 @@ const Header = () => {
           <h1>
           MIT BEAUTY<span>•</span>
           </h1>
-          <p className="tagline"> COSMETICS  </p>
+          <p className="tagline"> COSMETICS Products </p>
         </div>
 
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP </a>
+              <a href="/shop">SHOP Products</a>
             </li>
             <li>
-              <a href="/bestsellers">BEST</a>
+              <a href="/bestsellers">BEST Products</a>
             </li>
             <li>
-              <a href="/skincare">SKINCARE </a>
+              <a href="/skincare">SKINCARE Products</a>
             </li>
             <li>
               <a href="/makeup">MAKEUP </a>
