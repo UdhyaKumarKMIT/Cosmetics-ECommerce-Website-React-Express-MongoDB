@@ -11,7 +11,7 @@ const Header = () => {
           <h1>
           MIT BEAUTY<span>•</span>
           </h1>
-          <p className="tagline"> COSMETICS </p>
+          <p className="tagline"> COSMETICS Products</p>
         </div>
 
         <nav className="main-nav">
