@@ -14,7 +14,7 @@ const ProductCard = ({ name, image, category }) => {
         <h3 className="product-name">{name}</h3>
         <p className="product-category">{category}</p>
         <a href="#" className="shop-now-link">
-          Shop Now →
+          Shop Products Now →
         </a>
       </div>
     </div>
