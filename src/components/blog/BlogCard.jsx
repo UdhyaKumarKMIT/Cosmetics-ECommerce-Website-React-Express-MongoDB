@@ -11,9 +11,9 @@ const BlogCard = ({ title, image, category, description }) => {
         <h3 className="blog-title">{title}</h3>
         <p className="blog-description">{description}</p>
         <div className="blog-meta">
-          <span className="blog-date">PUBLISHED: June 17, 2025</span>
+          <span className="blog-date">PUBLISHED: June 18, 2025 Wednesday</span>
           <a href="#" className="read-more">
-            READ MORE →
+            READ MORE → To Know More
           </a>
         </div>
       </div>
