@@ -9,7 +9,7 @@ const BlogSection = () => {
       image: "/placeholder.svg?height=300&width=300",
       category: "SKINCARE",
       description:
-        "Discover the latest innovations in skincare technology and how they can transform your beauty routine.",
+        "Discover the latest innovations in skincare and healthcare technology and how they can transform your beauty routine.",
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const BlogSection = () => {
       image: "/placeholder.svg?height=300&width=300",
       category: "ORGANIC",
       description:
-        "Learn about the benefits of organic ingredients and how they can improve your skin health naturally.",
+        "Learn about the benefits of many organic ingredients and how they can improve your skin health naturally.",
     },
     {
       id: 3,
