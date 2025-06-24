@@ -12,7 +12,7 @@ const Footer = () => {
               <ul>
                 <li><a href="#">Shop products</a></li>
                 <li><a href="#">Best Skincare and Healthcare Cool Products</a></li>
-                <li><a href="#">Skincare and Haricare Products</a></li>
+                <li><a href="#">Skincare Products</a></li>
                 <li><a href="#">Makeup cool Products</a></li>
               </ul>
             </div>
