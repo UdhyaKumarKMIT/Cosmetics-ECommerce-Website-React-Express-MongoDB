@@ -11,7 +11,7 @@ const Header = () => {
           <h1>
           MIT BEAUTY<span>•</span>
           </h1>
-          <p className="tagline"> COSMETICS </p>
+          <p className="tagline"> COSMETICS Online Products </p>
         </div>
 
         <nav className="main-nav">
@@ -20,7 +20,7 @@ const Header = () => {
               <a href="/shop">SHOP  </a>
             </li>
             <li>
-              <a href="/bestsellers">BEST Cool  Products</a>
+              <a href="/bestsellers">BEST Products</a>
             </li>
             <li>
               <a href="/skincare">SKINCARE and Medicare Products </a>

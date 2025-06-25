@@ -10,7 +10,7 @@ const HeroSection = () => {
           <br />
           never before!
         </h2>
-        <button className="hero-button">SHOP NOW</button>
+        <button className="hero-button">SHOP Online NOW</button>
       </div>
       <div className="hero-products">
         {/* These would be actual images in a real implementation */}
