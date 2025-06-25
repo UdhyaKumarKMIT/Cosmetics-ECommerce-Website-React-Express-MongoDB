@@ -11,16 +11,16 @@ const Header = () => {
           <h1>
           MIT BEAUTY<span>•</span>
           </h1>
-          <p className="tagline"> COSMETICS Online Products </p>
+          <p className="tagline"> COSMETICS Online</p>
         </div>
 
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP  </a>
+              <a href="/shop">SHOP Online </a>
             </li>
             <li>
-              <a href="/bestsellers">BEST Products</a>
+              <a href="/bestsellers">BEST Products Online</a>
             </li>
             <li>
               <a href="/skincare">SKINCARE and Medicare Products </a>
