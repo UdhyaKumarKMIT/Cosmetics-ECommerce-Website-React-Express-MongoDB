@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 3,
-      name: "Skin MOISTURIZER",
+      name: "Skincare and Healthcare MOISTURIZER",
       image: "/placeholder.svg?height=200&width=200",
       category: "Skincare",
     },
