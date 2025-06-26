@@ -17,19 +17,19 @@ const FeaturedProducts = () => {
     },
     {
       id: 3,
-      name: "MOISTURIZER",
+      name: "Skin MOISTURIZER",
       image: "/placeholder.svg?height=200&width=200",
       category: "Skincare",
     },
     {
       id: 4,
-      name: "POWDER Mosturizer",
+      name: "POWDER and Liquid Mosturizer",
       image: "/placeholder.svg?height=200&width=200",
       category: "Accessories",
     },
     {
       id: 5,
-      name: "SKIN CARE Products",
+      name: "SKIN CARE and Hair Care Products",
       image: "/placeholder.svg?height=200&width=200",
       category: "Skincare",
     },
