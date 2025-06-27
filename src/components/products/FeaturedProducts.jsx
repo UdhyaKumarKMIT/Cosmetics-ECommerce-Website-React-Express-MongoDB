@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 4,
-      name: "POWDER and Liquid Mosturizer",
+      name: "Skincare Liquid  Mosturizer",
       image: "/placeholder.svg?height=200&width=200",
       category: "Accessories",
     },
