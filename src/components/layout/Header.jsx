@@ -17,16 +17,16 @@ const Header = () => {
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP Online Now </a>
+              <a href="/shop">SHOP Cosmetics </a>
             </li>
             <li>
               <a href="/bestsellers">BEST Products</a>
             </li>
             <li>
-              <a href="/skincare">SKINCARE  Products </a>
+              <a href="/skincare">SKINCARE Natural Products </a>
             </li>
             <li>
-              <a href="/makeup">MAKEUP Products </a>
+              <a href="/makeup">MAKEUP and Beauty Products </a>
             </li>
            
             <li>
