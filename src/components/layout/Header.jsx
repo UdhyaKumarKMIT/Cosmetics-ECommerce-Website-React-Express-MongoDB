@@ -17,20 +17,20 @@ const Header = () => {
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP Online </a>
+              <a href="/shop">SHOP Online Now </a>
             </li>
             <li>
-              <a href="/bestsellers">BESn Selling</a>
+              <a href="/bestsellers">BEST Selling Products</a>
             </li>
             <li>
-              <a href="/skincare">SKINCARE Online </a>
+              <a href="/skincare">SKINCARE Online Products</a>
             </li>
             <li>
-              <a href="/makeup">MAKEUP</a>
+              <a href="/makeup">MAKEUP Products  </a>
             </li>
            
             <li>
-  <Link to="/signup">Register Page</Link>
+  <Link to="/signup">Sign Up Page</Link>
 </li>
 
 <li>
