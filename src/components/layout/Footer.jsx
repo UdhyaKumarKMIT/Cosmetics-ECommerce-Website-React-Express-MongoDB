@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="navlinksBox">
               <h3>SHOP</h3>
               <ul>
-                <li><a href="#">Shop </a></li>
-                <li><a href="#">Best </a></li>
-                <li><a href="#">Skincare</a></li>
-                <li><a href="#">Makeup cool Products</a></li>
+                <li><a href="#">Shop Haircare products </a></li>
+                <li><a href="#">Best Haricare products </a></li>
+                <li><a href="#">Nature Skincare Products</a></li>
+                <li><a href="#">MakeX cool Products</a></li>
               </ul>
             </div>
           </div>
