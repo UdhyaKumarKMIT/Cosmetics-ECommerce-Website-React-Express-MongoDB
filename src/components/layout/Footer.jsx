@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="navlinksBox">
               <h3>SHOP</h3>
               <ul>
-                <li><a href="#">Shop  </a></li>
-                <li><a href="#">Best Haricare products </a></li>
-                <li><a href="#">Nature </a></li>
+                <li><a href="#">Shop Online Now </a></li>
+                <li><a href="#">Best Haricare and Medicare products </a></li>
+                <li><a href="#">Natural herbal Oil </a></li>
                 <li><a href="#">MakeUp Products</a></li>
               </ul>
             </div>
