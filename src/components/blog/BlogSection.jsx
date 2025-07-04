@@ -24,7 +24,7 @@ const BlogSection = () => {
       title: "BEAUTY CREAMS",
       image: "/placeholder.svg?height=300&width=300",
       category: "MAKEUP",
-      description: "Explore our collection of premium and natural beauty creams designed to enhance your natural beauty.",
+      description: "Explore collection of premium and natural green neem beauty creams designed to enhance your natural beauty.",
     },
   ]
 
