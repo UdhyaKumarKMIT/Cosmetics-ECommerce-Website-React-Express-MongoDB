@@ -11,8 +11,8 @@ const Footer = () => {
               <h3>SHOP</h3>
               <ul>
                 <li><a href="#">Shop Online Now </a></li>
-                <li><a href="#">Best</a></li>
-                <li><a href="#">Natural</a></li>
+                <li><a href="#">Best Health care products</a></li>
+                <li><a href="#">Natural skin care product</a></li>
                 <li><a href="#">MakeUp </a></li>
               </ul>
             </div>
