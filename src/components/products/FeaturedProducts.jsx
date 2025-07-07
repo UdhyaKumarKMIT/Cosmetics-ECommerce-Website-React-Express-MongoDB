@@ -19,13 +19,13 @@ const FeaturedProducts = () => {
       id: 3,
       name: "Skincare and Healthcare MOISTURIZER",
       image: "/placeholder.svg?height=200&width=200",
-      category: "Skincare",
+      category: "Skincare and haricare natural products",
     },
     {
       id: 4,
       name: "Skincare Liquid  Mosturizer",
       image: "/placeholder.svg?height=200&width=200",
-      category: "Accessories",
+      category: "ALl Accessories to makeup",
     },
     {
       id: 5,
