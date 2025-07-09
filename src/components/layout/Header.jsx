@@ -17,7 +17,7 @@ const Header = () => {
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="/shop">SHOP  </a>
+              <a href="/shop">SHOP online now  </a>
             </li>
             <li>
               <a href="/bestsellers">BEST Selling Products</a>
