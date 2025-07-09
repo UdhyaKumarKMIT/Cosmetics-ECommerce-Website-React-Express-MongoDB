@@ -23,7 +23,7 @@ const Header = () => {
               <a href="/bestsellers">BEST </a>
             </li>
             <li>
-              <a href="/skincare">SKINCARE </a>
+              <a href="/skincare">SKINCARE and natural products</a>
             </li>
             <li>
               <a href="/makeup">MAKEUP Products  </a>
