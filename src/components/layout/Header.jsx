@@ -19,8 +19,15 @@ const Header = () => {
             <li>
               <a href="/shop">SHOP online now  </a>
             </li>
+            
             <li>
-              <a href="/bestsellers">BEST Selling Products</a>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
             </li>
             <li>
               <a href="/skincare">SKINCARE and natural products</a>
