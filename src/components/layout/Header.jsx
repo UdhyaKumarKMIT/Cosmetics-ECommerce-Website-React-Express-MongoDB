@@ -31,6 +31,14 @@ const Header = () => {
             </li>
            
             <li>
+            <li>
+            <li>
+            <li>
+            <li>
+            <li>
+            <li>
+            <li>
+<li>
               <a href="/skincare">SKINCARE and natural products</a>
             </li> <li>
               <a href="/skincare">SKINCARE and natural products</a>
@@ -38,17 +46,7 @@ const Header = () => {
               <a href="/skincare">SKINCARE and natural products</a>
             </li> <li>
               <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
+          
               <a href="/skincare">SKINCARE and natural products</a>
             </li>
             <li>
