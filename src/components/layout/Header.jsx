@@ -45,6 +45,71 @@ const Header = () => {
             </li>
             <li>
               <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/bestsellers">BESTs</a>
             </li>
          
               <a href="/skincare">SKINCARE and natural products</a>
