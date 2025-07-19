@@ -58,148 +58,8 @@ const Header = () => {
             </li> <li>
               <a href="/bestsellers">BESTs</a>
             </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>  <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
+           
+            
             <li>
               <a href="/bestsellers">BESTs</a>
             </li><li>
@@ -220,6 +80,18 @@ const Header = () => {
               <a href="/skincare">SKINCARE and natural products</a>
             </li>
             <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
+              <a href="/makeup">MAKEUP Products  </a>
+            </li> <li>
               <a href="/makeup">MAKEUP Products  </a>
             </li>
            
