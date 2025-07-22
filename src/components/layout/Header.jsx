@@ -23,84 +23,9 @@ const Header = () => {
             <li>
               <a href="/bestsellers">BESTs</a>
             </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-           
             
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-         
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li> <li>
-              <a href="/skincare">SKINCARE and natural products</a>
-          
-              <a href="/skincare">SKINCARE and natural products</a>
-            </li>
-            <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li>    <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li>    <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li> <li>
-              <a href="/makeup">MAKEUP Products  </a>
-            </li>  
- 
-           
-            <li>
+            
+        <li>
   <Link to="/signup">Sign Up Page</Link>
 </li>
 
@@ -110,6 +35,7 @@ const Header = () => {
 
           </ul>
         </nav>
+      
         
         <div className="header-actions">
           
