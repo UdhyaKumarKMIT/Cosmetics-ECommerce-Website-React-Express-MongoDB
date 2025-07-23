@@ -16,6 +16,55 @@ const Header = () => {
 
         <nav className="main-nav">
           <ul>
+          <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li>
+              <a href="/shop">SHOP online now  </a>
+            </li>
+            
+            <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
             <li>
               <a href="/shop">SHOP online now  </a>
             </li>
