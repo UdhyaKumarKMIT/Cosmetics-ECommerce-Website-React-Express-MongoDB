@@ -51,6 +51,27 @@ const Header = () => {
             <li>
               <a href="/bestsellers">BESTs</a>
             </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
+            <li> <li>
+              <a href="/bestsellers">BESTs</a>
+            </li>
             <li>
               <a href="/shop">SHOP online now  </a>
             </li>
