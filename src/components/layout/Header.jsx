@@ -203,15 +203,6 @@ const Header = () => {
   <Link to="/signup">Sign Up Page</Link>
 </li>
 
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-     
-
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-     
 
 <li>
   <Link to="/login">Login Page Udhya</Link>
