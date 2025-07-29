@@ -119,17 +119,6 @@ const Header = () => {
 <li>
   <Link to="/login">Login Page Udhya Kumar</Link>
 </li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-     
-
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
      
 
 <li>
