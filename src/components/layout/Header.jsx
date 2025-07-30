@@ -1,144 +1,63 @@
-import { ShoppingBag, User, Search } from "lucide-react"
-import "./Header.css"
-import {Link} from 'react-router-dom'
+import { ShoppingBag, User } from "lucide-react";
+import "./Header.css";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="header">
-     
-
       <div className="main-header">
+        {/* Logo */}
         <div className="logo">
           <h1>
-          MIT BEAUTY<span>•</span>
+            MIT BEAUTY<span>•</span>
           </h1>
-          <p className="tagline">MIT COSMETICS </p>
+          <p className="tagline">MIT COSMETICS</p>
         </div>
 
-        <nav className="main-nav">
-          <ul>
-          <li>
-              <a href="/shop">SHOP online now  </a>
-            </li>
-            
+        {/* Navigation */}
+        <nav>
+          <ul className="nav-links">
             <li>
-              <a href="/bestsellers">BESTs</a>
+              <Link to="/signup">Sign Up</Link>
             </li>
             <li>
-              <a href="/shop">SHOP online now  </a>
-            </li>
-            
-            <li>
-              <a href="/bestsellers">BESTs</a>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
             <li>
-              <a href="/shop">SHOP online now  </a>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
-            
-           
             <li>
-              <a href="/bestsellers">BESTs</a>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
-             <li>
-              <a href="/bestsellers">BESTs</a>
+            <li>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
-             <li>
-              <a href="/bestsellers">BESTs</a>
+            <li>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
-           <li>
-              <a href="/bestsellers">BESTs</a>
+            <li>
+              <Link to="/login">Login</Link>
+            </li> <li>
+              <Link to="/signup">Sign Up</Link>
             </li>
-            <li> <li>
-              <a href="/bestsellers">BESTs</a>
+            <li>
+              <Link to="/login">Login</Link>
             </li>
-            <li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li><li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-            <li> <li>
-              <a href="/bestsellers">BESTs</a>
-            </li>
-       
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-<li>
-  <Link to="/login">Login Page Udhya Kumar</Link>
-</li>
-     
-
-<li>
-  <Link to="/login">Login Page Udhya</Link>
-</li>
-     
-<li>
-  <Link to="/signup">Sign Up Page</Link>
-</li>
-
-<li>
-  <Link to="/login">Login Page </Link>
-</li>
-
           </ul>
         </nav>
-      
-        
+
+        {/* Header Actions */}
         <div className="header-actions">
-          
           <button className="icon-button">
             <User size={20} />
           </button>
@@ -147,11 +66,9 @@ const Header = () => {
           </button>
           <button className="cta-button">SHOP NOW</button>
         </div>
-
-
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
