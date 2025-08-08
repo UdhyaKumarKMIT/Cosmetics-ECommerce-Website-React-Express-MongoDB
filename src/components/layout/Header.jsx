@@ -74,17 +74,40 @@ const Header = () => {
               <Link to="/login">Login</Link>
             </li>
           </ul>
-        </nav> {/* Navigation */}
-        <nav>
-          <ul className="nav-links">
-            <li>
-              <Link to="/signup">Sign Up</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-          </ul>
-        </nav> <nav>
+          #include <vector>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    int getLPSLength(string &s) {
+        int n = s.length();
+        if (n == 0) return 0;
+        
+        vector<int> lps(n, 0);
+        int len = 0; // length of the previous longest prefix suffix
+        
+        for (int i = 1; i < n; ) {
+            if (s[i] == s[len]) {
+                len++;
+                lps[i] = len;
+                i++;
+            } else {
+                if (len != 0) {
+                    len = lps[len - 1];
+                } else {
+                    lps[i] = 0;
+                    i++;
+                }
+            }
+        }
+        
+        return lps.back();
+    }
+};<nav>
+};<nav>
+};<nav>
+};<nav>
           <ul className="nav-links">
             <li>
               <Link to="/signup">Sign Up</Link>
