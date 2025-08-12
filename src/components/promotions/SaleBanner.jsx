@@ -1,33 +1,92 @@
-import "./SaleBanner.css"
+sort(prices.begin(), prices.end());
+int n = prices.size();
+int min_cost = 0, max_cost = 0;
+int i = 0, j = n - 1;
 
-const SaleBanner = () => {
-  return (
-    <section className="sale-banner">
-         <div className="sale-content">
-        <h2 className="sale-title">Spring Beauty Sale</h2>
-        <h3 className="sale-subtitle">Up to 40% Off</h3>
-        <p className="sale-description">
-          Enjoy premium beauty products at unbeatable prices. Limited time beauty deals on your favorite skincare and
-          makeup brands. Don't miss out!
-        </p>
-        <div className="rating">
-          <span className="stars">★★★★★</span>
-          <span className="reviews">(120+ reviews)</span>
-        </div>
-        <div className="sale-buttons">
-          <button className="shop-button">SHOP NOW</button>
-          <button className="view-button">VIEW ALL PRODUCTS</button>
-        </div>
-      </div>
-      <div className="sale-products">
-        {/* These would be actual images in a real implementation */}
-        <div className="sale-product product-1"></div>
-        <div className="sale-product product-2"></div>
-        <div className="sale-product product-3"></div>
-      </div>
-    </section>
-   
-  )
+// Calculate minimum cost
+while (i <= j) {
+    min_cost += prices[i];
+    j -= k;
+    i++;
 }
 
-export default SaleBanner
+i = 0;
+j = n - 1;
+
+// Calculate maximum cost
+while (i <= j) {
+    max_cost += prices[j];
+    i += k;
+    j--;
+}
+
+return {min_cost, max_cost};
+sort(prices.begin(), prices.end());
+int n = prices.size();
+int min_cost = 0, max_cost = 0;
+int i = 0, j = n - 1;
+
+// Calculate minimum cost
+while (i <= j) {
+    min_cost += prices[i];
+    j -= k;
+    i++;
+}
+
+i = 0;
+j = n - 1;
+
+// Calculate maximum cost
+while (i <= j) {
+    max_cost += prices[j];
+    i += k;
+    j--;
+}
+
+return {min_cost, max_cost};
+sort(prices.begin(), prices.end());
+int n = prices.size();
+int min_cost = 0, max_cost = 0;
+int i = 0, j = n - 1;
+
+// Calculate minimum cost
+while (i <= j) {
+    min_cost += prices[i];
+    j -= k;
+    i++;
+}
+
+i = 0;
+j = n - 1;
+
+// Calculate maximum cost
+while (i <= j) {
+    max_cost += prices[j];
+    i += k;
+    j--;
+}
+
+return {min_cost, max_cost};
+sort(prices.begin(), prices.end());
+int n = prices.size();
+int min_cost = 0, max_cost = 0;
+int i = 0, j = n - 1;
+
+// Calculate minimum cost
+while (i <= j) {
+    min_cost += prices[i];
+    j -= k;
+    i++;
+}
+
+i = 0;
+j = n - 1;
+
+// Calculate maximum cost
+while (i <= j) {
+    max_cost += prices[j];
+    i += k;
+    j--;
+}
+
+return {min_cost, max_cost};
