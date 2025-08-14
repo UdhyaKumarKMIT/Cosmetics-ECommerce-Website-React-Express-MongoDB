@@ -1,120 +1,64 @@
 class Solution {
     public:
-        int maxProfit(vector<int>& prices) {
-            int buy=prices[0];
-            int maxProfit=0;
-            for(int i=1;i<prices.size();i++)
+        string largestGoodInteger(string nums) {
+            string res="";
+            int len=nums.size();
+            int i=0;
+            while(i<len)
             {
-                if(prices[i] < buy){
-                    buy=prices[i];
-                }else if(prices[i]-buy > maxProfit)
+                int j=i;
+                while(j<len && nums[i]==nums[j])
                 {
-                    maxProfit=prices[i]-buy;
+                    j++;
                 }
+                if(j-i>=3)
+                {
+                    res=max(res,nums.substr(i,3));
+                }
+                i=j;
             }
-            return maxProfit;
+            return res;
         }
-    };
-    class Solution {
+    };class Solution {
         public:
-            int maxProfit(vector<int>& prices) {
-                int buy=prices[0];
-                int maxProfit=0;
-                for(int i=1;i<prices.size();i++)
+            string largestGoodInteger(string nums) {
+                string res="";
+                int len=nums.size();
+                int i=0;
+                while(i<len)
                 {
-                    if(prices[i] < buy){
-                        buy=prices[i];
-                    }else if(prices[i]-buy > maxProfit)
+                    int j=i;
+                    while(j<len && nums[i]==nums[j])
                     {
-                        maxProfit=prices[i]-buy;
+                        j++;
                     }
+                    if(j-i>=3)
+                    {
+                        res=max(res,nums.substr(i,3));
+                    }
+                    i=j;
                 }
-                return maxProfit;
+                return res;
             }
-        };
-        class Solution {
-            public:
-                int maxProfit(vector<int>& prices) {
-                    int buy=prices[0];
-                    int maxProfit=0;
-                    for(int i=1;i<prices.size();i++)
-                    {
-                        if(prices[i] < buy){
-                            buy=prices[i];
-                        }else if(prices[i]-buy > maxProfit)
-                        {
-                            maxProfit=prices[i]-buy;
-                        }
-                    }
-                    return maxProfit;
-                }
-            };
-            class Solution {
-                public:
-                    int maxProfit(vector<int>& prices) {
-                        int buy=prices[0];
-                        int maxProfit=0;
-                        for(int i=1;i<prices.size();i++)
-                        {
-                            if(prices[i] < buy){
-                                buy=prices[i];
-                            }else if(prices[i]-buy > maxProfit)
-                            {
-                                maxProfit=prices[i]-buy;
-                            }
-                        }
-                        return maxProfit;
-                    }
-                };
-                class Solution {
-                    public:
-                        int maxProfit(vector<int>& prices) {
-                            int buy=prices[0];
-                            int maxProfit=0;
-                            for(int i=1;i<prices.size();i++)
-                            {
-                                if(prices[i] < buy){
-                                    buy=prices[i];
-                                }else if(prices[i]-buy > maxProfit)
-                                {
-                                    maxProfit=prices[i]-buy;
-                                }
-                            }
-                            return maxProfit;
-                        }
-                    };
-                    class Solution {
-                        public:
-                            int maxProfit(vector<int>& prices) {
-                                int buy=prices[0];
-                                int maxProfit=0;
-                                for(int i=1;i<prices.size();i++)
-                                {
-                                    if(prices[i] < buy){
-                                        buy=prices[i];
-                                    }else if(prices[i]-buy > maxProfit)
-                                    {
-                                        maxProfit=prices[i]-buy;
-                                    }
-                                }
-                                return maxProfit;
-                            }
-                        };
-                        class Solution {
-                            public:
-                                int maxProfit(vector<int>& prices) {
-                                    int buy=prices[0];
-                                    int maxProfit=0;
-                                    for(int i=1;i<prices.size();i++)
-                                    {
-                                        if(prices[i] < buy){
-                                            buy=prices[i];
-                                        }else if(prices[i]-buy > maxProfit)
-                                        {
-                                            maxProfit=prices[i]-buy;
-                                        }
-                                    }
-                                    return maxProfit;
-                                }
-                            };
-                                                                                                                
+        };class Solution {
+public:
+    string largestGoodInteger(string nums) {
+        string res="";
+        int len=nums.size();
+        int i=0;
+        while(i<len)
+        {
+            int j=i;
+            while(j<len && nums[i]==nums[j])
+            {
+                j++;
+            }
+            if(j-i>=3)
+            {
+                res=max(res,nums.substr(i,3));
+            }
+            i=j;
+        }
+        return res;
+    }
+};
