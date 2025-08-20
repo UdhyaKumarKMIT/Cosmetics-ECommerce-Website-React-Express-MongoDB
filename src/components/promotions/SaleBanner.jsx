@@ -1,32 +1,101 @@
-#include <bits/stdc++.h>
-using namespace std;
+int n = mat.size();        
+int m = mat[0].size();    
 
-long long robLinear(vector<int>& nums, int l, int r) {
-    long long prev2 = 0, prev1 = 0; // prev2 = dp[i-2], prev1 = dp[i-1]
-    for (int i = l; i <= r; i++) {
-        long long pick = nums[i] + prev2;
-        long long notPick = prev1;
-        long long cur = max(pick, notPick);
-        prev2 = prev1;
-        prev1 = cur;
+int low = 0, high = n * m - 1;  
+
+while (low <= high) {
+    int mid = low + (high - low) / 2;
+
+    // convert 1D index to 2D coordinates
+    int row = mid / m;
+    int col = mid % m;
+    int midVal = mat[row][col];
+
+    // check if mid element is the target
+    if (midVal == x) {
+        return true;
     }
-    return prev1;
+
+    // get value at virtual low position
+    int lowRow = low / m;
+    int lowCol = low % m;
+    int lowVal = mat[lowRow][lowCol];
+
+    // if left half is sorted
+    if (lowVal <= midVal) {
+        
+        // check if x lies within the left 
+        // sorted half
+        if (lowVal <= x && x < midVal) {
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    } else {
+        // right half is sorted
+        int highRow = high / m;
+        int highCol = high % m;
+        int highVal = mat[highRow][highCol];
+
+        // check if x lies within the right
+        // sorted half
+        if (midVal < x && x <= highVal) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
 }
 
-long long int houseRobber(vector<int>& valueInHouse) {
-    int n = valueInHouse.size();
-    if (n == 0) return 0;
-    if (n == 1) return valueInHouse[0];
-    // Case 1: Exclude last house
-    long long case1 = robLinear(valueInHouse, 0, n-2);
-    // Case 2: Exclude first house
-    long long case2 = robLinear(valueInHouse, 1, n-1);
-    return max(case1, case2);
+// x not found in the matrix
+return false; int n = mat.size();        
+int m = mat[0].size();    
+
+int low = 0, high = n * m - 1;  
+
+while (low <= high) {
+    int mid = low + (high - low) / 2;
+
+    // convert 1D index to 2D coordinates
+    int row = mid / m;
+    int col = mid % m;
+    int midVal = mat[row][col];
+
+    // check if mid element is the target
+    if (midVal == x) {
+        return true;
+    }
+
+    // get value at virtual low position
+    int lowRow = low / m;
+    int lowCol = low % m;
+    int lowVal = mat[lowRow][lowCol];
+
+    // if left half is sorted
+    if (lowVal <= midVal) {
+        
+        // check if x lies within the left 
+        // sorted half
+        if (lowVal <= x && x < midVal) {
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    } else {
+        // right half is sorted
+        int highRow = high / m;
+        int highCol = high % m;
+        int highVal = mat[highRow][highCol];
+
+        // check if x lies within the right
+        // sorted half
+        if (midVal < x && x <= highVal) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
 }
 
-// Example usage
-int main() {
-    vector<int> houses = {2, 3, 2};
-    cout << houseRobber(houses) << endl; // Output: 3
-    return 0;
-}
+// x not found in the matrix
+return false;
