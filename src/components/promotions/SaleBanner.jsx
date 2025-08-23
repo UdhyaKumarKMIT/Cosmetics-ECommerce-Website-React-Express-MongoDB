@@ -1,289 +1,77 @@
-int n = mat.size();        
-int m = mat[0].size();    
-
-int low = 0, high = n * m - 1;  
-
-while (low <= high) {
-    int mid = low + (high - low) / 2;
-
-    // convert 1D index to 2D coordinates
-    int row = mid / m;
-    int col = mid % m;
-    int midVal = mat[row][col];
-
-    // check if mid element is the target
-    if (midVal == x) {
-        return true;
-    }
-
-    // get value at virtual low position
-    int lowRow = low / m;
-    int lowCol = low % m;
-    int lowVal = mat[lowRow][lowCol];
-
-    // if left half is sorted
-    if (lowVal <= midVal) {
-        
-        // check if x lies within the left 
-        // sorted half
-        if (lowVal <= x && x < midVal) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    } else {
-        // right half is sorted
-        int highRow = high / m;
-        int highCol = high % m;
-        int highVal = mat[highRow][highCol];
-
-        // check if x lies within the right
-        // sorted half
-        if (midVal < x && x <= highVal) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-    }
-}
-
-// x not found in the matrix
-return false; int n = mat.size();        
-int m = mat[0].size();    
-
-int low = 0, high = n * m - 1;  
-
-while (low <= high) {
-    int mid = low + (high - low) / 2;
-
-    // convert 1D index to 2D coordinates
-    int row = mid / m;
-    int col = mid % m;
-    int midVal = mat[row][col];
-
-    // check if mid element is the target
-    if (midVal == x) {
-        return true;
-    }
-
-    // get value at virtual low position
-    int lowRow = low / m;
-    int lowCol = low % m;
-    int lowVal = mat[lowRow][lowCol];
-
-    // if left half is sorted
-    if (lowVal <= midVal) {
-        
-        // check if x lies within the left 
-        // sorted half
-        if (lowVal <= x && x < midVal) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    } else {
-        // right half is sorted
-        int highRow = high / m;
-        int highCol = high % m;
-        int highVal = mat[highRow][highCol];
-
-        // check if x lies within the right
-        // sorted half
-        if (midVal < x && x <= highVal) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-    }
-}
-
-// x not found in the matrix
-return false;int n = mat.size();        
-int m = mat[0].size();    
-
-int low = 0, high = n * m - 1;  
-
-while (low <= high) {
-    int mid = low + (high - low) / 2;
-
-    // convert 1D index to 2D coordinates
-    int row = mid / m;
-    int col = mid % m;
-    int midVal = mat[row][col];
-
-    // check if mid element is the target
-    if (midVal == x) {
-        return true;
-    }
-
-    // get value at virtual low position
-    int lowRow = low / m;
-    int lowCol = low % m;
-    int lowVal = mat[lowRow][lowCol];
-
-    // if left half is sorted
-    if (lowVal <= midVal) {
-        
-        // check if x lies within the left 
-        // sorted half
-        if (lowVal <= x && x < midVal) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    } else {
-        // right half is sorted
-        int highRow = high / m;
-        int highCol = high % m;
-        int highVal = mat[highRow][highCol];
-
-        // check if x lies within the right
-        // sorted half
-        if (midVal < x && x <= highVal) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-    }
-}
-
-// x not found in the matrix
-return false;int n = mat.size();        
-int m = mat[0].size();    
-
-int low = 0, high = n * m - 1;  
-
-while (low <= high) {
-    int mid = low + (high - low) / 2;
-
-    // convert 1D index to 2D coordinates
-    int row = mid / m;
-    int col = mid % m;
-    int midVal = mat[row][col];
-
-    // check if mid element is the target
-    if (midVal == x) {
-        return true;
-    }
-
-    // get value at virtual low position
-    int lowRow = low / m;
-    int lowCol = low % m;
-    int lowVal = mat[lowRow][lowCol];
-
-    // if left half is sorted
-    if (lowVal <= midVal) {
-        
-        // check if x lies within the left 
-        // sorted half
-        if (lowVal <= x && x < midVal) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    } else {
-        // right half is sorted
-        int highRow = high / m;
-        int highCol = high % m;
-        int highVal = mat[highRow][highCol];
-
-        // check if x lies within the right
-        // sorted half
-        if (midVal < x && x <= highVal) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-    }
-}
-
-// x not found in the matrix
-return false;d = low + (high - low) / 2;
-
-// convert 1D index to 2D coordinates
-int row = mid / m;
-int col = mid % m;
-int midVal = mat[row][col];
-
-// check if mid element is the target
-if (midVal == x) {
-    return true;
-}
-
-// get value at virtual low position
-int lowRow = low / m;
-int lowCol = low % m;
-int lowVal = mat[lowRow][lowCol];
-
-// if left half is sorted
-if (lowVal <= midVal) {
+class Solution {
+    public:
+      bool canAllocate(vector<int>& arr, int k, int maxPages) {
+          int students = 1;
+          int pages = 0;
+  
+          for (int x : arr) {
+              if (x > maxPages) return false; // single book exceeds limit
+              if (pages + x > maxPages) {
+                  students++;
+                  pages = x;
+                  if (students > k) return false;
+              } else {
+                  pages += x;
+              }
+          }
+          return true;
+      }
+  
+      int findPages(vector<int> &arr, int k) {
+          if (k > arr.size()) return -1; // not enough books
+  
+          int low = *max_element(arr.begin(), arr.end());
+          int high = accumulate(arr.begin(), arr.end(), 0);
+          int ans = -1;
+  
+          while (low <= high) {
+              int mid = low + (high - low) / 2;
+              if (canAllocate(arr, k, mid)) {
+                  ans = mid;
+                  high = mid - 1; // try smaller
+              } else {
+                  low = mid + 1; // increase pages
+              }
+          }
+          return ans;
+      }
+  };
+  class Solution {
+    public:
+      bool canAllocate(vector<int>& arr, int k, int maxPages) {
+          int students = 1;
+          int pages = 0;
+  
+          for (int x : arr) {
+              if (x > maxPages) return false; // single book exceeds limit
+              if (pages + x > maxPages) {
+                  students++;
+                  pages = x;
+                  if (students > k) return false;
+              } else {
+                  pages += x;
+              }
+          }
+          return true;
+      }
+  
+      int findPages(vector<int> &arr, int k) {
+          if (k > arr.size()) return -1; // not enough books
+  
+          int low = *max_element(arr.begin(), arr.end());
+          int high = accumulate(arr.begin(), arr.end(), 0);
+          int ans = -1;
+  
+          while (low <= high) {
+              int mid = low + (high - low) / 2;
+              if (canAllocate(arr, k, mid)) {
+                  ans = mid;
+                  high = mid - 1; // try smaller
+              } else {
+                  low = mid + 1; // increase pages
+              }
+          }
+          return ans;
+      }
+  };
     
-    // check if x lies within the left 
-    // sorted half
-    if (lowVal <= x && x < midVal) {
-        high = mid - 1;
-    } else {
-        low = mid + 1;
-    }
-} else {
-    // right half is sorted
-    int highRow = high / m;
-    int highCol = high % m;
-    int highVal = mat[highRow][highCol];
-
-    // check if x lies within the right
-    // sorted half
-    if (midVal < x && x <= highVal) {
-        low = mid + 1;
-    } else {
-        high = mid - 1;
-    }
-}
-}
-
-// x not found in the matrix
-return false;d = low + (high - low) / 2;
-
-// convert 1D index to 2D coordinates
-int row = mid / m;
-int col = mid % m;
-int midVal = mat[row][col];
-
-// check if mid element is the target
-if (midVal == x) {
-    return true;
-}
-
-// get value at virtual low position
-int lowRow = low / m;
-int lowCol = low % m;
-int lowVal = mat[lowRow][lowCol];
-
-// if left half is sorted
-if (lowVal <= midVal) {
-    
-    // check if x lies within the left 
-    // sorted half
-    if (lowVal <= x && x < midVal) {
-        high = mid - 1;
-    } else {
-        low = mid + 1;
-    }
-} else {
-    // right half is sorted
-    int highRow = high / m;
-    int highCol = high % m;
-    int highVal = mat[highRow][highCol];
-
-    // check if x lies within the right
-    // sorted half
-    if (midVal < x && x <= highVal) {
-        low = mid + 1;
-    } else {
-        high = mid - 1;
-    }
-}
-}
-
-// x not found in the matrix
-return false;
