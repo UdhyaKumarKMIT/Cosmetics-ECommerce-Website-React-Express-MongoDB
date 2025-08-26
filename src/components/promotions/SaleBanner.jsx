@@ -1,51 +1,81 @@
 class Solution {
     public:
-        vector<int> findDiagonalOrder(vector<vector<int>>& matrix) {
-            if (matrix.empty() || matrix[0].empty()) return {};
-    
-            int m = matrix.size(), n = matrix[0].size();
-            vector<int> result(m * n);
-            int row = 0, col = 0;
-    
-            for (int i = 0; i < m * n; i++) {
-                result[i] = matrix[row][col];
-    
-                if ((row + col) % 2 == 0) {
-                    if (col == n - 1) row++;
-                    else if (row == 0) col++;
-                    else { row--; col++; }
-                } else {
-                    if (row == m - 1) col++;
-                    else if (col == 0) row++;
-                    else { row++; col--; }
+        int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
+            int n=dimensions.size();
+            double temp=0.0;
+            int res=0;
+            for(auto &dim:dimensions)
+            {
+                double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
+                if(temp<t)
+                {
+                    res=dim[0]*dim[1];
+                    temp=t;
+                }else if(temp==t)
+                {
+                    res=max(res,dim[0]*dim[1]);
                 }
             }
-    
-            return result;
+            return res;
         }
     };class Solution {
 public:
-    vector<int> findDiagonalOrder(vector<vector<int>>& matrix) {
-        if (matrix.empty() || matrix[0].empty()) return {};
-
-        int m = matrix.size(), n = matrix[0].size();
-        vector<int> result(m * n);
-        int row = 0, col = 0;
-
-        for (int i = 0; i < m * n; i++) {
-            result[i] = matrix[row][col];
-
-            if ((row + col) % 2 == 0) {
-                if (col == n - 1) row++;
-                else if (row == 0) col++;
-                else { row--; col++; }
-            } else {
-                if (row == m - 1) col++;
-                else if (col == 0) row++;
-                else { row++; col--; }
+    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
+        int n=dimensions.size();
+        double temp=0.0;
+        int res=0;
+        for(auto &dim:dimensions)
+        {
+            double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
+            if(temp<t)
+            {
+                res=dim[0]*dim[1];
+                temp=t;
+            }else if(temp==t)
+            {
+                res=max(res,dim[0]*dim[1]);
             }
         }
-
-        return result;
+        return res;
     }
-};
+};class Solution {
+public:
+    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
+        int n=dimensions.size();
+        double temp=0.0;
+        int res=0;
+        for(auto &dim:dimensions)
+        {
+            double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
+            if(temp<t)
+            {
+                res=dim[0]*dim[1];
+                temp=t;
+            }else if(temp==t)
+            {
+                res=max(res,dim[0]*dim[1]);
+            }
+        }
+        return res;
+    }
+};class Solution {
+    public:
+        int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
+            int n=dimensions.size();
+            double temp=0.0;
+            int res=0;
+            for(auto &dim:dimensions)
+            {
+                double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
+                if(temp<t)
+                {
+                    res=dim[0]*dim[1];
+                    temp=t;
+                }else if(temp==t)
+                {
+                    res=max(res,dim[0]*dim[1]);
+                }
+            }
+            return res;
+        }
+    };
