@@ -1,81 +1,121 @@
-class Solution {
-    public:
-        int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
-            int n=dimensions.size();
-            double temp=0.0;
-            int res=0;
-            for(auto &dim:dimensions)
-            {
-                double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
-                if(temp<t)
-                {
-                    res=dim[0]*dim[1];
-                    temp=t;
-                }else if(temp==t)
-                {
-                    res=max(res,dim[0]*dim[1]);
-                }
-            }
-            return res;
+int res = 0;
+sort(arr.begin(), arr.end());
+
+// Iterate through the array, fixing 
+// the largest side at arr[i]
+for (int i = 2; i < arr.size(); ++i) {
+  
+      // Initialize pointers for the two smaller sides
+    int left = 0, right = i - 1; 
+
+    while (left < right) {
+      
+        if (arr[left] + arr[right] > arr[i]) {
+          
+            // arr[left] + arr[right] satisfies 
+            // the triangle inequality, so all pairs
+            // (x, right) with (left <= x < right) are valid
+            res += right - left; 
+          
+              // Move the right pointer to check smaller pairs
+            right--; 
+        } 
+          else {
+          
+              // Move the left pointer to increase the sum
+            left++; 
         }
-    };class Solution {
-public:
-    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
-        int n=dimensions.size();
-        double temp=0.0;
-        int res=0;
-        for(auto &dim:dimensions)
-        {
-            double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
-            if(temp<t)
-            {
-                res=dim[0]*dim[1];
-                temp=t;
-            }else if(temp==t)
-            {
-                res=max(res,dim[0]*dim[1]);
-            }
-        }
-        return res;
     }
-};class Solution {
-public:
-    int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
-        int n=dimensions.size();
-        double temp=0.0;
-        int res=0;
-        for(auto &dim:dimensions)
-        {
-            double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
-            if(temp<t)
-            {
-                res=dim[0]*dim[1];
-                temp=t;
-            }else if(temp==t)
-            {
-                res=max(res,dim[0]*dim[1]);
-            }
+}
+
+return res; int res = 0;
+sort(arr.begin(), arr.end());
+
+// Iterate through the array, fixing 
+// the largest side at arr[i]
+for (int i = 2; i < arr.size(); ++i) {
+  
+      // Initialize pointers for the two smaller sides
+    int left = 0, right = i - 1; 
+
+    while (left < right) {
+      
+        if (arr[left] + arr[right] > arr[i]) {
+          
+            // arr[left] + arr[right] satisfies 
+            // the triangle inequality, so all pairs
+            // (x, right) with (left <= x < right) are valid
+            res += right - left; 
+          
+              // Move the right pointer to check smaller pairs
+            right--; 
+        } 
+          else {
+          
+              // Move the left pointer to increase the sum
+            left++; 
         }
-        return res;
     }
-};class Solution {
-    public:
-        int areaOfMaxDiagonal(vector<vector<int>>& dimensions) {
-            int n=dimensions.size();
-            double temp=0.0;
-            int res=0;
-            for(auto &dim:dimensions)
-            {
-                double t=sqrt(dim[0]*dim[0] + dim[1]*dim[1]);
-                if(temp<t)
-                {
-                    res=dim[0]*dim[1];
-                    temp=t;
-                }else if(temp==t)
-                {
-                    res=max(res,dim[0]*dim[1]);
-                }
-            }
-            return res;
+}
+
+return res; int res = 0;
+sort(arr.begin(), arr.end());
+
+// Iterate through the array, fixing 
+// the largest side at arr[i]
+for (int i = 2; i < arr.size(); ++i) {
+  
+      // Initialize pointers for the two smaller sides
+    int left = 0, right = i - 1; 
+
+    while (left < right) {
+      
+        if (arr[left] + arr[right] > arr[i]) {
+          
+            // arr[left] + arr[right] satisfies 
+            // the triangle inequality, so all pairs
+            // (x, right) with (left <= x < right) are valid
+            res += right - left; 
+          
+              // Move the right pointer to check smaller pairs
+            right--; 
+        } 
+          else {
+          
+              // Move the left pointer to increase the sum
+            left++; 
         }
-    };
+    }
+}
+
+return res; int res = 0;
+sort(arr.begin(), arr.end());
+
+// Iterate through the array, fixing 
+// the largest side at arr[i]
+for (int i = 2; i < arr.size(); ++i) {
+  
+      // Initialize pointers for the two smaller sides
+    int left = 0, right = i - 1; 
+
+    while (left < right) {
+      
+        if (arr[left] + arr[right] > arr[i]) {
+          
+            // arr[left] + arr[right] satisfies 
+            // the triangle inequality, so all pairs
+            // (x, right) with (left <= x < right) are valid
+            res += right - left; 
+          
+              // Move the right pointer to check smaller pairs
+            right--; 
+        } 
+          else {
+          
+              // Move the left pointer to increase the sum
+            left++; 
+        }
+    }
+}
+
+return res;
