@@ -1,121 +1,215 @@
-int res = 0;
-sort(arr.begin(), arr.end());
+#include <iostream>
+#include <vector>
+#include <map>
+#include <queue>
 
-// Iterate through the array, fixing 
-// the largest side at arr[i]
-for (int i = 2; i < arr.size(); ++i) {
-  
-      // Initialize pointers for the two smaller sides
-    int left = 0, right = i - 1; 
+using namespace std;
 
-    while (left < right) {
-      
-        if (arr[left] + arr[right] > arr[i]) {
-          
-            // arr[left] + arr[right] satisfies 
-            // the triangle inequality, so all pairs
-            // (x, right) with (left <= x < right) are valid
-            res += right - left; 
-          
-              // Move the right pointer to check smaller pairs
-            right--; 
-        } 
-          else {
-          
-              // Move the left pointer to increase the sum
-            left++; 
+class Solution {
+public:
+    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
+        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
+
+        // Step 1: Store diagonals in appropriate heaps
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+                } else {
+                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                }
+            }
         }
-    }
-}
 
-return res; int res = 0;
-sort(arr.begin(), arr.end());
-
-// Iterate through the array, fixing 
-// the largest side at arr[i]
-for (int i = 2; i < arr.size(); ++i) {
-  
-      // Initialize pointers for the two smaller sides
-    int left = 0, right = i - 1; 
-
-    while (left < right) {
-      
-        if (arr[left] + arr[right] > arr[i]) {
-          
-            // arr[left] + arr[right] satisfies 
-            // the triangle inequality, so all pairs
-            // (x, right) with (left <= x < right) are valid
-            res += right - left; 
-          
-              // Move the right pointer to check smaller pairs
-            right--; 
-        } 
-          else {
-          
-              // Move the left pointer to increase the sum
-            left++; 
+        // Step 2: Refill the grid with sorted values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    grid[i][j] = maxHeaps[diagIndex].top();
+                    maxHeaps[diagIndex].pop();
+                } else {
+                    grid[i][j] = minHeaps[diagIndex].top();
+                    minHeaps[diagIndex].pop();
+                }
+            }
         }
+
+        return grid;
     }
-}
+};
+#include <iostream>
+#include <vector>
+#include <map>
+#include <queue>
 
-return res; int res = 0;
-sort(arr.begin(), arr.end());
+using namespace std;
 
-// Iterate through the array, fixing 
-// the largest side at arr[i]
-for (int i = 2; i < arr.size(); ++i) {
-  
-      // Initialize pointers for the two smaller sides
-    int left = 0, right = i - 1; 
+class Solution {
+public:
+    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
+        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
 
-    while (left < right) {
-      
-        if (arr[left] + arr[right] > arr[i]) {
-          
-            // arr[left] + arr[right] satisfies 
-            // the triangle inequality, so all pairs
-            // (x, right) with (left <= x < right) are valid
-            res += right - left; 
-          
-              // Move the right pointer to check smaller pairs
-            right--; 
-        } 
-          else {
-          
-              // Move the left pointer to increase the sum
-            left++; 
+        // Step 1: Store diagonals in appropriate heaps
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+                } else {
+                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                }
+            }
         }
-    }
-}
 
-return res; int res = 0;
-sort(arr.begin(), arr.end());
-
-// Iterate through the array, fixing 
-// the largest side at arr[i]
-for (int i = 2; i < arr.size(); ++i) {
-  
-      // Initialize pointers for the two smaller sides
-    int left = 0, right = i - 1; 
-
-    while (left < right) {
-      
-        if (arr[left] + arr[right] > arr[i]) {
-          
-            // arr[left] + arr[right] satisfies 
-            // the triangle inequality, so all pairs
-            // (x, right) with (left <= x < right) are valid
-            res += right - left; 
-          
-              // Move the right pointer to check smaller pairs
-            right--; 
-        } 
-          else {
-          
-              // Move the left pointer to increase the sum
-            left++; 
+        // Step 2: Refill the grid with sorted values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    grid[i][j] = maxHeaps[diagIndex].top();
+                    maxHeaps[diagIndex].pop();
+                } else {
+                    grid[i][j] = minHeaps[diagIndex].top();
+                    minHeaps[diagIndex].pop();
+                }
+            }
         }
-    }
-}
 
-return res;
+        return grid;
+    }
+};
+#include <iostream>
+#include <vector>
+#include <map>
+#include <queue>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
+        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
+
+        // Step 1: Store diagonals in appropriate heaps
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+                } else {
+                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                }
+            }
+        }
+
+        // Step 2: Refill the grid with sorted values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    grid[i][j] = maxHeaps[diagIndex].top();
+                    maxHeaps[diagIndex].pop();
+                } else {
+                    grid[i][j] = minHeaps[diagIndex].top();
+                    minHeaps[diagIndex].pop();
+                }
+            }
+        }
+
+        return grid;
+    }
+};
+#include <iostream>
+#include <vector>
+#include <map>
+#include <queue>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
+        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
+
+        // Step 1: Store diagonals in appropriate heaps
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+                } else {
+                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                }
+            }
+        }
+
+        // Step 2: Refill the grid with sorted values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    grid[i][j] = maxHeaps[diagIndex].top();
+                    maxHeaps[diagIndex].pop();
+                } else {
+                    grid[i][j] = minHeaps[diagIndex].top();
+                    minHeaps[diagIndex].pop();
+                }
+            }
+        }
+
+        return grid;
+    }
+};
+#include <iostream>
+#include <vector>
+#include <map>
+#include <queue>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
+        int n = grid.size();
+        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
+        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
+
+        // Step 1: Store diagonals in appropriate heaps
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+                } else {
+                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                }
+            }
+        }
+
+        // Step 2: Refill the grid with sorted values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int diagIndex = j - i;
+                if (diagIndex <= 0) {
+                    grid[i][j] = maxHeaps[diagIndex].top();
+                    maxHeaps[diagIndex].pop();
+                } else {
+                    grid[i][j] = minHeaps[diagIndex].top();
+                    minHeaps[diagIndex].pop();
+                }
+            }
+        }
+
+        return grid;
+    }
+};
