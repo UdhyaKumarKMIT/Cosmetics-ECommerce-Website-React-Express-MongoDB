@@ -1,542 +1,151 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
 class Solution {
-public:
-    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-        int n = grid.size();
-        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-        // Step 1: Store diagonals in appropriate heaps
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
+    public:
+        int celebrity(vector<vector<int>>& mat) {
+            int n = mat.size();
+            int i = 0, j = n - 1;
+            
+            // Step 1: Find candidate
+            while (i < j) {
+                if (mat[i][j] == 1) {
+                    // i knows j -> i cannot be celebrity
+                    i++;
                 } else {
-                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+                    // i does not know j -> j cannot be celebrity
+                    j--;
                 }
             }
-        }
-
-        // Step 2: Refill the grid with sorted values
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    grid[i][j] = maxHeaps[diagIndex].top();
-                    maxHeaps[diagIndex].pop();
-                } else {
-                    grid[i][j] = minHeaps[diagIndex].top();
-                    minHeaps[diagIndex].pop();
+            
+            // Step 2: Verify candidate
+            int candidate = i;
+            for (int k = 0; k < n; k++) {
+                if (k == candidate) continue;
+                // Celebrity does not know anyone, but everyone knows celebrity
+                if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
+                    return -1;
                 }
             }
+            
+            return candidate;
         }
-
-        return grid;
-    }
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-        int n = grid.size();
-        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-        // Step 1: Store diagonals in appropriate heaps
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-                } else {
-                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+    };
+    class Solution {
+        public:
+            int celebrity(vector<vector<int>>& mat) {
+                int n = mat.size();
+                int i = 0, j = n - 1;
+                
+                // Step 1: Find candidate
+                while (i < j) {
+                    if (mat[i][j] == 1) {
+                        // i knows j -> i cannot be celebrity
+                        i++;
+                    } else {
+                        // i does not know j -> j cannot be celebrity
+                        j--;
+                    }
                 }
-            }
-        }
-
-        // Step 2: Refill the grid with sorted values
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    grid[i][j] = maxHeaps[diagIndex].top();
-                    maxHeaps[diagIndex].pop();
-                } else {
-                    grid[i][j] = minHeaps[diagIndex].top();
-                    minHeaps[diagIndex].pop();
+                
+                // Step 2: Verify candidate
+                int candidate = i;
+                for (int k = 0; k < n; k++) {
+                    if (k == candidate) continue;
+                    // Celebrity does not know anyone, but everyone knows celebrity
+                    if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
+                        return -1;
+                    }
                 }
+                
+                return candidate;
             }
-        }
-
-        return grid;
-    }
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-        int n = grid.size();
-        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-        // Step 1: Store diagonals in appropriate heaps
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-                } else {
-                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
+        };
+        class Solution {
+            public:
+                int celebrity(vector<vector<int>>& mat) {
+                    int n = mat.size();
+                    int i = 0, j = n - 1;
+                    
+                    // Step 1: Find candidate
+                    while (i < j) {
+                        if (mat[i][j] == 1) {
+                            // i knows j -> i cannot be celebrity
+                            i++;
+                        } else {
+                            // i does not know j -> j cannot be celebrity
+                            j--;
+                        }
+                    }
+                    
+                    // Step 2: Verify candidate
+                    int candidate = i;
+                    for (int k = 0; k < n; k++) {
+                        if (k == candidate) continue;
+                        // Celebrity does not know anyone, but everyone knows celebrity
+                        if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
+                            return -1;
+                        }
+                    }
+                    
+                    return candidate;
                 }
-            }
-        }
-
-        // Step 2: Refill the grid with sorted values
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    grid[i][j] = maxHeaps[diagIndex].top();
-                    maxHeaps[diagIndex].pop();
-                } else {
-                    grid[i][j] = minHeaps[diagIndex].top();
-                    minHeaps[diagIndex].pop();
-                }
-            }
-        }
-
-        return grid;
-    }
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-        int n = grid.size();
-        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-        // Step 1: Store diagonals in appropriate heaps
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-                } else {
-                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-                }
-            }
-        }
-
-        // Step 2: Refill the grid with sorted values
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    grid[i][j] = maxHeaps[diagIndex].top();
-                    maxHeaps[diagIndex].pop();
-                } else {
-                    grid[i][j] = minHeaps[diagIndex].top();
-                    minHeaps[diagIndex].pop();
-                }
-            }
-        }
-
-        return grid;
-    }
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-    vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-        int n = grid.size();
-        map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-        map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-        // Step 1: Store diagonals in appropriate heaps
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-                } else {
-                    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-                }
-            }
-        }
-
-        // Step 2: Refill the grid with sorted values
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int diagIndex = j - i;
-                if (diagIndex <= 0) {
-                    grid[i][j] = maxHeaps[diagIndex].top();
-                    maxHeaps[diagIndex].pop();
-                } else {
-                    grid[i][j] = minHeaps[diagIndex].top();
-                    minHeaps[diagIndex].pop();
-                }
-            }
-        }
-
-        return grid;
-    }
-};
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-
-using namespace std;
-
-class Solution {
-public:
-vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
-int n = grid.size();
-map<int, priority_queue<int>> maxHeaps;  // Descending order for bottom-left
-map<int, priority_queue<int, vector<int>, greater<int>>> minHeaps;  // Ascending order for top-right
-
-// Step 1: Store diagonals in appropriate heaps
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    maxHeaps[diagIndex].push(grid[i][j]);  // Max-Heap for bottom-left
-} else {
-    minHeaps[diagIndex].push(grid[i][j]);  // Min-Heap for top-right
-}
-}
-}
-
-// Step 2: Refill the grid with sorted values
-for (int i = 0; i < n; i++) {
-for (int j = 0; j < n; j++) {
-int diagIndex = j - i;
-if (diagIndex <= 0) {
-    grid[i][j] = maxHeaps[diagIndex].top();
-    maxHeaps[diagIndex].pop();
-} else {
-    grid[i][j] = minHeaps[diagIndex].top();
-    minHeaps[diagIndex].pop();
-}
-}
-}
-
-return grid;
-}
-};
+            };
+            class Solution {
+                public:
+                    int celebrity(vector<vector<int>>& mat) {
+                        int n = mat.size();
+                        int i = 0, j = n - 1;
+                        
+                        // Step 1: Find candidate
+                        while (i < j) {
+                            if (mat[i][j] == 1) {
+                                // i knows j -> i cannot be celebrity
+                                i++;
+                            } else {
+                                // i does not know j -> j cannot be celebrity
+                                j--;
+                            }
+                        }
+                        
+                        // Step 2: Verify candidate
+                        int candidate = i;
+                        for (int k = 0; k < n; k++) {
+                            if (k == candidate) continue;
+                            // Celebrity does not know anyone, but everyone knows celebrity
+                            if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
+                                return -1;
+                            }
+                        }
+                        
+                        return candidate;
+                    }
+                };
+                class Solution {
+                    public:
+                        int celebrity(vector<vector<int>>& mat) {
+                            int n = mat.size();
+                            int i = 0, j = n - 1;
+                            
+                            // Step 1: Find candidate
+                            while (i < j) {
+                                if (mat[i][j] == 1) {
+                                    // i knows j -> i cannot be celebrity
+                                    i++;
+                                } else {
+                                    // i does not know j -> j cannot be celebrity
+                                    j--;
+                                }
+                            }
+                            
+                            // Step 2: Verify candidate
+                            int candidate = i;
+                            for (int k = 0; k < n; k++) {
+                                if (k == candidate) continue;
+                                // Celebrity does not know anyone, but everyone knows celebrity
+                                if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
+                                    return -1;
+                                }
+                            }
+                            
+                            return candidate;
+                        }
+                    };
+                                                        
