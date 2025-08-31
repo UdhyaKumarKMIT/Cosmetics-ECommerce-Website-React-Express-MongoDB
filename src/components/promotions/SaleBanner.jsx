@@ -1,151 +1,57 @@
 class Solution {
     public:
-        int celebrity(vector<vector<int>>& mat) {
-            int n = mat.size();
-            int i = 0, j = n - 1;
-            
-            // Step 1: Find candidate
-            while (i < j) {
-                if (mat[i][j] == 1) {
-                    // i knows j -> i cannot be celebrity
-                    i++;
-                } else {
-                    // i does not know j -> j cannot be celebrity
-                    j--;
-                }
+        int maxWater(vector<int> &arr) {
+            int n = arr.size();
+            int left = 0, right = n - 1;
+            int maxArea = 0;
+    
+            while (left < right) {
+                int height = min(arr[left], arr[right]);
+                int width = right - left;
+                maxArea = max(maxArea, height * width);
+    
+                // Move the smaller line inward
+                if (arr[left] < arr[right])
+                    left++;
+                else
+                    right--;
             }
-            
-            // Step 2: Verify candidate
-            int candidate = i;
-            for (int k = 0; k < n; k++) {
-                if (k == candidate) continue;
-                // Celebrity does not know anyone, but everyone knows celebrity
-                if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
-                    return -1;
-                }
-            }
-            
-            return candidate;
+    
+            return maxArea;
         }
     };
+    
+    
+    
+    
+    
+    
     class Solution {
         public:
-            int celebrity(vector<vector<int>>& mat) {
-                int n = mat.size();
-                int i = 0, j = n - 1;
-                
-                // Step 1: Find candidate
-                while (i < j) {
-                    if (mat[i][j] == 1) {
-                        // i knows j -> i cannot be celebrity
-                        i++;
-                    } else {
-                        // i does not know j -> j cannot be celebrity
-                        j--;
-                    }
+            int maxWater(vector<int> &arr) {
+                int n = arr.size();
+                int left = 0, right = n - 1;
+                int maxArea = 0;
+        
+                while (left < right) {
+                    int height = min(arr[left], arr[right]);
+                    int width = right - left;
+                    maxArea = max(maxArea, height * width);
+        
+                    // Move the smaller line inward
+                    if (arr[left] < arr[right])
+                        left++;
+                    else
+                        right--;
                 }
-                
-                // Step 2: Verify candidate
-                int candidate = i;
-                for (int k = 0; k < n; k++) {
-                    if (k == candidate) continue;
-                    // Celebrity does not know anyone, but everyone knows celebrity
-                    if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
-                        return -1;
-                    }
-                }
-                
-                return candidate;
+        
+                return maxArea;
             }
         };
-        class Solution {
-            public:
-                int celebrity(vector<vector<int>>& mat) {
-                    int n = mat.size();
-                    int i = 0, j = n - 1;
-                    
-                    // Step 1: Find candidate
-                    while (i < j) {
-                        if (mat[i][j] == 1) {
-                            // i knows j -> i cannot be celebrity
-                            i++;
-                        } else {
-                            // i does not know j -> j cannot be celebrity
-                            j--;
-                        }
-                    }
-                    
-                    // Step 2: Verify candidate
-                    int candidate = i;
-                    for (int k = 0; k < n; k++) {
-                        if (k == candidate) continue;
-                        // Celebrity does not know anyone, but everyone knows celebrity
-                        if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
-                            return -1;
-                        }
-                    }
-                    
-                    return candidate;
-                }
-            };
-            class Solution {
-                public:
-                    int celebrity(vector<vector<int>>& mat) {
-                        int n = mat.size();
-                        int i = 0, j = n - 1;
-                        
-                        // Step 1: Find candidate
-                        while (i < j) {
-                            if (mat[i][j] == 1) {
-                                // i knows j -> i cannot be celebrity
-                                i++;
-                            } else {
-                                // i does not know j -> j cannot be celebrity
-                                j--;
-                            }
-                        }
-                        
-                        // Step 2: Verify candidate
-                        int candidate = i;
-                        for (int k = 0; k < n; k++) {
-                            if (k == candidate) continue;
-                            // Celebrity does not know anyone, but everyone knows celebrity
-                            if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
-                                return -1;
-                            }
-                        }
-                        
-                        return candidate;
-                    }
-                };
-                class Solution {
-                    public:
-                        int celebrity(vector<vector<int>>& mat) {
-                            int n = mat.size();
-                            int i = 0, j = n - 1;
-                            
-                            // Step 1: Find candidate
-                            while (i < j) {
-                                if (mat[i][j] == 1) {
-                                    // i knows j -> i cannot be celebrity
-                                    i++;
-                                } else {
-                                    // i does not know j -> j cannot be celebrity
-                                    j--;
-                                }
-                            }
-                            
-                            // Step 2: Verify candidate
-                            int candidate = i;
-                            for (int k = 0; k < n; k++) {
-                                if (k == candidate) continue;
-                                // Celebrity does not know anyone, but everyone knows celebrity
-                                if (mat[candidate][k] == 1 || mat[k][candidate] == 0) {
-                                    return -1;
-                                }
-                            }
-                            
-                            return candidate;
-                        }
-                    };
-                                                        
+        
+        
+        
+        
+        
+        
+        
