@@ -353,7 +353,29 @@ class Solution {
                         public:
                             bool doesAliceWin(string s) {
                                 for (int i = 0; i < s.size(); i++)
-                                    if ((0x104111 >> (s[i] - 97)) & 1)
+                           int freq[26], maxVowel = 0, maxConso = 0;
+        for (char c : s) {
+            int i = c - 'a';
+            freq[i]++;
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                maxVowel = max(maxVowel, freq[i]);
+            }
+            else {
+                maxConso = max(maxConso, freq[i]);
+            }
+        }
+        return maxVowel + maxConso;int freq[26], maxVowel = 0, maxConso = 0;
+        for (char c : s) {
+            int i = c - 'a';
+            freq[i]++;
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                maxVowel = max(maxVowel, freq[i]);
+            }
+            else {
+                maxConso = max(maxConso, freq[i]);
+            }
+        }
+        return maxVowel + maxConso;         if ((0x104111 >> (s[i] - 97)) & 1)
                                         return 1;                                
                                 return 0;
                             }
