@@ -18,6 +18,16 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+    </div><div className="app">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
       <div className="app">
       <Router>
