@@ -10,7 +10,7 @@ function App() {
     class Solution {
 public:
 int n ;class Solution {
-public:
+p
     vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
         int n = potions.size(), m = spells.size();
         vector<int> ret(m);
