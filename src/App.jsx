@@ -8,7 +8,7 @@ import Home from "./components/home"
 function App() {
   return (
     class Solution {
-public:
+public:yguffhfyfyfyfhfyf.
 int n ;class Solution {
 p// C++ Solution
 static constexpr int MOD = 1e9 + 7;
