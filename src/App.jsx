@@ -23,11 +23,7 @@ class Solution {
         for (int i = 1; i <= 30; i++) {
             C[i][0] = C[i][i] = 1;
             for (int j = 1; j <= i / 2; j++) {
-                const int Cij = (C[i - 1][j - 1] + C[i - 1][j]) % MOD;
-                C[i][j] = C[i][i - j] = Cij;
-            }
-        }
-    }
+                const int Cij = (C[i - 1][j 
 
     int dfs(int m, int k, int i, unsigned flag, vector<int>& nums) {
         const int bz = __builtin_popcount(flag);
@@ -44,7 +40,21 @@ class Solution {
             unsigned newFlag = flag + f;
             unsigned nextFlag = newFlag >> 1;
             bool bitSet = newFlag & 1;
-            ans = (ans + perm * dfs(m - f, k - bitSet, i + 1, nextFlag, nums)) % MOD;
+       class Solution {
+public:
+    int maxDistinctElements(vector<int>& nums, int k) {
+        sort(nums.begin(), nums.end());
+        int ans = 0, prev = -1e9;
+
+        for (int i = 0; i < nums.size(); i++) {
+            int l = max(nums[i] - k, prev + 1);
+            if (l <= nums[i] + k) {
+                prev = l, ans++;
+            }
+        }
+        return ans;
+    }
+};     ans = (ans + perm * dfs(m - f, k - bitSet, i + 1, nextFlag, nums)) % MOD;
             powX = powX * x % MOD;
         }
         return dp[m][k][i][flag] = ans;
