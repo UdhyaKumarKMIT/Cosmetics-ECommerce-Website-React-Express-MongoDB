@@ -14,7 +14,25 @@ p// C++ Solution
 static constexpr int MOD = 1e9 + 7;
 static int C[31][31] = {{0}};
 static int dp[31][31][50][31];
-
+class Solution {
+public:
+    bool hasSameDigits(string s) {
+        int len=s.size();
+        string t="";
+        while(s.size()>2)
+        {
+        len=s.size();
+        t="";
+        for(int i=0;i<len-1;i++)
+        {
+           int temp=((s[i]-'0')+(s[i+1]-'0'))%10;
+           t+=string(1,temp);  //temp will be [0,9]
+        }
+        s=t;
+        }
+        return s[0]==s[1];
+    }
+};
 class Solution {
     int m, k, n;
     public int maxFrequency(int[] A, int k, int numOperations) {
