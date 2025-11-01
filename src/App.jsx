@@ -16,6 +16,33 @@ static int C[31][31] = {{0}};
 static int dp[31][31][50][31];
 class Solution {
 public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+p// C++ Solution
+static constexpr int MOD = 1e9 + 7;
+static int C[31][31] = {{0}};
+static int dp[31][31][50][31];
+class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+p// C++ Solution
+static constexpr int MOD = 1e9 + 7;
+static int C[31][31] = {{0}};
+static int dp[31][31][50][31];
+class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+p// C++ Solution
+static constexpr int MOD = 1e9 + 7;
+static int C[31][31] = {{0}};
+static int dp[31][31][50][31];
+class Solution {
+public:
     bool hasSameDigits(string s) {
         int len=s.size();
         string t="";
