@@ -19,6 +19,26 @@ public:
     bool hasSameDigits(sclass Solution {
 public:yguffhfyfyfyfhfyf.
 int n ;class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
+public:
+    bool hasSameDigits(sclass Solution {
+public:yguffhfyfyfyfhfyf.
+int n ;class Solution {
 p// C++ Solution
 static constexpr int MOD = 1e9 + 7;
 static int C[31][31] = {{0}};
