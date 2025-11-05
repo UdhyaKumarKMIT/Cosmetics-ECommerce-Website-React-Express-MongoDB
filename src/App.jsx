@@ -5,7 +5,15 @@ import Login from "./components/auth/Login"
 import Signup from "./components/auth/Signup"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./components/home"
-function App() {
+function App() {Mama..
+Aadhar la address change pana father name remove agirucku 😭😭😭
+
+KYC complete aga matangiduQ18 of 25
+What are the benefits of Continuous Integration? [Multiple response question]
+7 Automated Build integrates various tools
+Lesser deployment risk as smaller changes are deployed
+Provides ability to completely rebuild and test applications
+Visible progress of value as changes are available in production
   return (
     class Solution {
 public:yguffhfyfyfyfhfyf.
