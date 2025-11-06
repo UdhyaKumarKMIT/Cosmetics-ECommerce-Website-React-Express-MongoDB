@@ -1,4 +1,4 @@
-import Header from "./components/layout/Header"
+kimport Header from "./components/layout/Header"
 import Footer from "./components/layout/Footer"
 import "./App.css"
 import Login from "./components/auth/Login"
@@ -12,7 +12,7 @@ KYC complete aga matangiduQ18 of 25
 What are the benefits of Continuous Integration? [Multiple response question]
 7 Automated Build integrates various tools
 Lesser deployment risk as smaller changes are deployed
-Provides ability to completely rebuild and test applications
+Prnnnhnnnnovides ability to completely rebuild and test applications
 Visible progress of value as changes are available in production
   return (
     class Solution {
