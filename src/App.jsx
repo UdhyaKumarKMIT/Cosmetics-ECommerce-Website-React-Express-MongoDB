@@ -5,7 +5,17 @@ import Login from "./components/auth/Login"
 import Signup from "./components/auth/Signup"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./components/home"
-function App() {Mama..
+function App() {Mamaclass Solution {
+public:
+    int minimumOneBitOperations(int n) {
+        int res = 0;
+        while (n) {
+            res ^= n;
+            n >>= 1;
+        }
+        return res;
+    }
+};.
 Aadhar la address change pana father name remove agirucku 😭😭😭
 
 KYC complete aga matangiduQ18 of 25
