@@ -1,4 +1,4 @@
-okimport Header from "./components/layout/Header"
+9okimport Header from "./components/layout/Header"
 import Footer from "./components/layout/Footer"
 import "./App.css"
 import Login from "./components/auth/Login"
@@ -10,7 +10,7 @@ public:
     int minimumOneBitOperations(int n) {
         int res = 0;
         while (n) {
- jhhjj           res ^= n;
+ jjjjjjjjjjhhjj           res ^= n;
             n >>= 1;
         }
         return res;
