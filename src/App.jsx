@@ -1,13 +1,29 @@
-⁸hhshehimport
+⁸⁸hhshehimport
   
   
   
   
   9150653370exactly use the same face 
-.little slime✅ Top Novel Project Ideas in Networking (2025-Ready)
+.lhittle slime✅ Top Novel Project Ideas in Networking (2025-Ready)
 
 1. AI-Driven Congestion Prediction in Software-Defined Networks (SDN)
-
+class Solution {
+public:
+    using ll=long long;
+    static long long maxSubarraySum(vector<int>& nums, int k) {
+        const int n=nums.size();
+        vector<ll> minS(k, LLONG_MAX/2);
+        ll prefix=0, ans=LLONG_MIN;
+        minS[k-1]=0;
+        for(int i=0; i<n; i++){
+            prefix+=nums[i];
+            ll& ksum=minS[i%k];
+            ans=max(ans, prefix-ksum);
+            ksum=min(prefix, ksum);  
+        }
+        return ans;
+    }
+};
 Novelty: Use machine learning (LSTM or GRU) to predict congestion before it happens and reroute traffic dynamically.
 
 Why it's good:
