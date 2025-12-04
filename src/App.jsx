@@ -2,7 +2,7 @@
   
 class Solution {
 public:
-    int count = 0;
+    int count = 0;hhgnbbbggu
     int k;
     vector<vector<int>> adj;
     vector<int> values;
