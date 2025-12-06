@@ -1,6 +1,6 @@
 jsjjsjs⁸⁸hhshehimport
   
-class Solution {
+class Solution {hjhhsjs
 public:
     int count = 0;hhgnbbbggu
     int k;
