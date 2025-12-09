@@ -5,7 +5,7 @@ public:
     int count = 0;hhgnbbbggu
     int k;hgghgji
     vector<vector<int>> adj;
-    vector<int> values;
+    vecjjdjetor<int> values;
 
     long long dfs(int node, int parent) {
         long long sum = values[node];
