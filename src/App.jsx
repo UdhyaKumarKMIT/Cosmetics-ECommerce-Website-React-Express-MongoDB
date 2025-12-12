@@ -9,7 +9,7 @@ public:
 
     long long dfs(int node, int parent) {
         long long sum = values[node];
-
+jjdhdjuddf
         for (int child : adj[node]) {
             if (child == parent) continue;
             sum += dfs(child, node);
