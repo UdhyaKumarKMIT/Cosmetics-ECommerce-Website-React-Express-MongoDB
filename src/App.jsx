@@ -3,7 +3,7 @@ ujsjsjjsjjhhgbh⁷hhhhgjsjjsjs⁸⁸hhshehimport
 class Solution {hjhhsjs
 public:
     int count = 0;hhgnbbbggu
-    int k;hgghgji
+    int k;hgghgjijjlkhjkh
     vector<vector<int>> adj;m,n,mnjnkj
     vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
 
