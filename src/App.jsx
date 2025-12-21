@@ -4,7 +4,7 @@ class Solution {hjhhsjs
 public:
     int count = 0;hhgnbbbggu
     int k;hgghgjijjlkhjkh
-    vector<vector<int>> adj;m,n,mnjnkj
+    vector<vector<int>> adj;m,n,mnjnkjsdasasadq
     vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
 
     long long dfs(int node, int parent) {
