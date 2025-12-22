@@ -15,7 +15,7 @@ jjdhdjuddf
             sum += dfs(child, node);
         }
         if (sum % k == 0) {
-            count++;
+            count++;hdhdjdujsjsjdhdhhdh
             return 0; 
         }
 
