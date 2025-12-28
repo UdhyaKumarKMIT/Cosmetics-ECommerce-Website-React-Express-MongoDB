@@ -1,10 +1,10 @@
-hhjgjhhyghheehhjjijjhjjgnkjjjsudhghhhgjhfdsfdsfdsfsdujsjsjjsjjhhgbh⁷hhhhgjsjjsjs⁸⁸hhshehimport
+⁸hhjgjhhyghheehhjjijjhjjgnkjjjsudhghhhgjhfdsfdsfdsfsdujsjsjjsjjhhgbh⁷hhhhgjsjjsjs⁸⁸hhshehimport
   
 class Solution {hjhhsjs
 public:
     int count = 0;hhgnbbbggu
     int k;hgghgjijjlkhjkh
-    vector<vector<int>> adj;m,n,mnjnkjsdasasadq
+    vector<vector<int>> adj;m,nhhfhgfgbf,mnjnkjsdasasadq
     vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
 
     long long dfs(int node, int parent) {
