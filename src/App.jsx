@@ -8,7 +8,7 @@ public:
     vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
 
     long long dfs(int node, int parent) {
-        long long sum = values[node];
+        long long sumhqhhwhhs = values[node];
 jjdhdjuddf
         for (int child : adj[node]) {
             if (child == parent) continue;
