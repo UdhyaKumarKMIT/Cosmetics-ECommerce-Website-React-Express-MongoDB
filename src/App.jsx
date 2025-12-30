@@ -1,7 +1,7 @@
-⁸hhjgjhhyghheehhjjijjhjjgnkjjjsudhghhhgjhfdsfdsfdsfsdujsjsjjsjjhhgbh⁷hhhhgjsjjsjs⁸⁸hhshehimport
+jhjnn⁸hhjgjhhyghheehhjjijjhjjgnkjjjsudhghhhgjhfdsfdsfdsfsdujsjsjjsjjhhgbh⁷hhhhgjsjjsjs⁸⁸hhshehimport
   
 class Solution {hjhhsjs
-public:
+public:huhhhhghjjh
     int count = 0;hhgnbbbggu
     int k;hgghgjijjlkhjkh
     vector<vector<int>> adj;m,nhhfhgfgbf,mnjnkjsdasasadq
