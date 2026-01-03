@@ -3,7 +3,7 @@ jhjnn⁸hhjgjhhyghheehhjjijjhjjgnkjjjsudhghhhgjhfdsfdsfdsfsdujsjsjjsjjhhgbh⁷hh
 class Solution {hjhhsjs
 public:huhhhhghjjh
     int count = 0;hhgnbbbggu
-    int k;hgghgjijjlkhjkh
+    injjsjjsjdt k;hgghgjijjlkhjkh
     vector<vector<int>> adj;m,nhhfhgfgbf,mnjnkjsdasasadq
     vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
 
