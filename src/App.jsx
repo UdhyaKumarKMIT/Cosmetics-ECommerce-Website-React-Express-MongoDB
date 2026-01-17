@@ -6,7 +6,7 @@ public:huhhhhghjjh
     injjjdjdjdjjdnbdjd
                 jjsjssjsjjsjdt k;hgghgjijjlkhjkh
     vector<vector<int>> adj;m,nhhfhgfgbf,mnjnkjsdasasadqhflhlkfhfk
-    vecjjdjetor<int> values;nnjnkljlkjkjkljlkjlk
+    vecjjdjetor<int> values;nnjnkljlkjkjkljlkKJKNJKjlk
 
     long long dfsjjj(int node, int parent) {
         long long sum = values[node];
