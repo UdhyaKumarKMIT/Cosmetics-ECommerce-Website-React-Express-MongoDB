@@ -1,5 +1,5 @@
 7hjdjrgoing to ksr Bengaluru 
-hjjhjjjnjdjdj
+
 **Cosmetics Ecommerce Website React
 
 Cosmetics website built using react
