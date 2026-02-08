@@ -1,4 +1,4 @@
-7hjdjrgoing to ksr Bengaluru 
+again going to ksr Bengaluru 
 
 **Cosmetics Ecommerce Website React
 
