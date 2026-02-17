@@ -1,2 +1,3 @@
 New 
 life
+New beginning 
